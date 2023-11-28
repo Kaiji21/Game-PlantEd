@@ -78,9 +78,8 @@ To install Laravel, please follow these steps:
 	 `npm install` 
 5.  Start the development server by running the following command:
      ```bash
-	 `npm run dev`
-		
-You should now be able to access your Vue.js application at  `http://localhost:3000`.
+	 `npm run dev`	
+You should now be able to access your Vue.js application at  `http://localhost:5173`.
 
 	
  
