@@ -72,13 +72,14 @@ To install Laravel, please follow these steps:
 
 3.  Run the following command to initialize a new Vue.js project: 
 	 ```bash
-	`cd your-project-name`
+	`cd Game-vue-Front`
  4.  Install the project dependencies by running the following command:
 	 ```bash
 	 `npm install` 
 5.  Start the development server by running the following command:
-		 ```bash
-		 `npm run dev` 
+     ```bash
+	 `npm run dev`
+		
 You should now be able to access your Vue.js application at  `http://localhost:3000`.
 
 	
