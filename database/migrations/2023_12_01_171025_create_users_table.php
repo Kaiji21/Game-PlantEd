@@ -18,9 +18,9 @@ return new class extends Migration
             $table->integer('total_points')->default(0);
             $table->string('password');
             $table->foreignId('level_id')
+            ->nullable()
             ->constrained('levels')
-            ->cascadeOnDelete()
-            ->nullable();
+            ->cascadeOnDelete();
             $table->rememberToken();
             $table->timestamps();
         });
