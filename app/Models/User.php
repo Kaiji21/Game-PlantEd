@@ -17,11 +17,23 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['name', 'email', 'password', 'total_points', 'level_id'];
+    
+    public function level()
+    {
+        return $this->belongsTo(Level::class);
+    }
+
+    public function userProgress()
+    {
+        return $this->hasMany(UserProgress::class);
+    }
+
+    public function userBadges()
+    {
+        return $this->hasMany(UserBadge::class);
+    }
+
 
     /**
      * The attributes that should be hidden for serialization.
