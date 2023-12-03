@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Models\UserProgress;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Traits\GeneralTrait;
+
 
 class UserProgressController extends Controller
 {

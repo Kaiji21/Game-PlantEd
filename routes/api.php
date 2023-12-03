@@ -27,9 +27,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::prefix('v1')->group(function () {
-    
+
+
+    Route::group(['middleware'=>['api','api_token']],function(){
+        Route::resource('users', UserController::class);
+
+
+    });
+
+
     // User routes
-    Route::resource('users', UserController::class);
 
     // Level routes
     Route::resource('levels', LevelController::class);

@@ -5,31 +5,84 @@ namespace App\Http\Controllers\Api;
 use App\Models\Level;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Traits\GeneralTrait;
+
+use Illuminate\Support\Facades\Validator;
 
 class LevelController extends Controller
 {
+    use GeneralTrait;
+
     public function index()
     {
-        // Retrieve a list of users
+        $levels = Level::all();
+        return $this->returnData('levels', $levels, 'Levels retrieved successfully', '200');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        // Create a new user
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string',
+            'difficulty' => 'required|string',
+            'required_points' => 'required|integer',
+            'learning_objective' => 'required|string',
+
+        ]);
+
+        if ($validator->fails()) {
+            return $this->returnError(400, $validator->errors()->first());
+        }
+
+        $level = Level::create($request->all());
+
+        return $this->returnData('level', $level, 'Level created successfully', '201');
     }
 
-    public function show(Level $level)
+    public function show($id)
     {
-        // Retrieve a specific user
+        $level = Level::find($id);
+
+        if (!$level) {
+            return $this->returnError(404, 'Level not found');
+        }
+
+        return $this->returnData('level', $level, 'Level retrieved successfully', '200');
     }
 
-    public function update(Level $level)
+    public function update(Request $request, $id)
     {
-        // Update a specific user
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string',
+            'difficulty' => 'required|string',
+            'required_points' => 'required|integer',
+            'learning_objective' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return $this->returnError(400, $validator->errors()->first());
+        }
+
+        $level = Level::find($id);
+
+        if (!$level) {
+            return $this->returnError(404, 'Level not found');
+        }
+
+        $level->update($request->all());
+
+        return $this->returnData('level', $level, 'Level updated successfully', '200');
     }
 
-    public function destroy(Level $level)
+    public function destroy($id)
     {
-        // Delete a specific user
+        $level = Level::find($id);
+
+        if (!$level) {
+            return $this->returnError(404, 'Level not found');
+        }
+
+        $level->delete();
+
+        return $this->returnSuccessMessage('Level deleted successfully', '200');
     }
 }
