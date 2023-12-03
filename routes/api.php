@@ -2,6 +2,14 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\LevelController;
+use App\Http\Controllers\Api\TaskController;
+use App\Http\Controllers\Api\UserProgressController;
+use App\Http\Controllers\Api\BadgeController;
+use App\Http\Controllers\Api\UserBadgeController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +24,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::prefix('v1')->group(function () {
+    
+    // User routes
+    Route::resource('users', UserController::class);
+
+    // Level routes
+    Route::resource('levels', LevelController::class);
+
+    // Task routes
+    Route::resource('tasks', TaskController::class);
+
+    // User Progress routes
+    Route::resource('user-progress', UserProgressController::class);
+
+    // Badge routes
+    Route::resource('badges', BadgeController::class);
+
+    // User Badge routes
+    Route::resource('user-badges', UserBadgeController::class);
 });
