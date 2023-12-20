@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,8 +19,9 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = ['name', 'email', 'password', 'total_points', 'level_id'];
-    
+    protected $fillable = ['name', 'email', 'password', 'total_points', 'level_id','role',
+    'profile_image',];
+
     public function level()
     {
         return $this->belongsTo(Level::class);
@@ -32,6 +35,12 @@ class User extends Authenticatable
     public function userBadges()
     {
         return $this->hasMany(UserBadge::class);
+    }
+
+    public function tasks()
+    {
+        return $this->belongsToMany(Task::class, 'user_tasks')
+            ->withPivot('completed'); 
     }
 
 
@@ -54,4 +63,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
 }

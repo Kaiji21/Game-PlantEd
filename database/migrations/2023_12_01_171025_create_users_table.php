@@ -22,6 +22,8 @@ return new class extends Migration
             ->constrained('levels')
             ->cascadeOnDelete();
             $table->rememberToken();
+            $table->string('role')->default('user');
+            $table->string('profile_image')->default('default.jpg');
             $table->timestamps();
         });
     }

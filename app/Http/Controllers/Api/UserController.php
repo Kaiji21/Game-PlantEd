@@ -84,4 +84,21 @@ class UserController extends Controller
 
         return $this->returnSuccessMessage('User deleted successfully', '200');
     }
+
+    public function getUserBadges()
+    {
+        $user = auth()->user();
+        $badges = $user->userBadges; // Assuming you have a relationship set up
+
+        return $this->returnData('user_badges', $badges, 'User badges retrieved successfully', '200');
+    }
+    public function getUserProgress()
+    {
+        $user = auth()->user();
+        $progress = $user->userProgress; // Assuming you have a relationship set up
+
+        return $this->returnData('user_progress', $progress, 'User progress retrieved successfully', '200');
+    }
+
+
 }

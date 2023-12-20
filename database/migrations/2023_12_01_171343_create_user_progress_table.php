@@ -22,6 +22,7 @@ return new class extends Migration
             $table->timestamp('completed_at')->nullable();
             $table->integer('earned_points')->default(0);
             $table->text('learning_feedback')->nullable();
+            $table->enum('status', ['ongoing', 'completed'])->default('ongoing');
             $table->timestamps();
         });
     }

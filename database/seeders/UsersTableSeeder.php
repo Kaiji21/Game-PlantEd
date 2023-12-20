@@ -26,6 +26,8 @@ class UsersTableSeeder extends Seeder
             'email' => 'john@example.com',
             'password' => bcrypt('password'),
             'level_id' => $level->id,
+            'role'=>'user'
+
         ]);
 
         UserProgress::create([

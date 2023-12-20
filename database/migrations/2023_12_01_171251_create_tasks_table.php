@@ -20,6 +20,9 @@ return new class extends Migration
             $table->integer('estimated_duration');
             $table->integer('points');
             $table->text('learning_content');
+            $table->json('emails')->nullable();
+            $table->json('correct_answers')->nullable();
+
             $table->timestamps();
         });
     }
