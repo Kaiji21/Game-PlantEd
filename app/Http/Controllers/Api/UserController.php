@@ -100,5 +100,14 @@ class UserController extends Controller
         return $this->returnData('user_progress', $progress, 'User progress retrieved successfully', '200');
     }
 
+    public function getTopPlayers($limit = 5)
+    {
+        $topPlayers = User::orderByDesc('total_points')->take($limit)->get();
+
+        return $this->returnData('users', $topPlayers,'All TopPlayers retrieved successfully.');
+
+
+    }
+
 
 }

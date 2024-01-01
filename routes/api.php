@@ -36,6 +36,8 @@ Route::prefix('v1')->group(function () {
         Route::post('/auth',[AuthController::class,'Login']);
         Route::post('/logout',[AuthController::class,'Logout']);
         Route::get('/levels/{levelId}/tasks', [TaskController::class, 'getTasksForLevel']);
+        Route::get('/top-players/{limit?}', [UserController::class, 'getTopPlayers']);
+
 
 
 
