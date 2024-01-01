@@ -1,26 +1,19 @@
-<p  align="center"><a  href="#"  target="_blank"><img  src="/readmeimg.jpg"  width="400"  alt="Laravel Logo"></a></p>
+<p  align="center"><a  href="#"  target="_blank"><img  src="/6.png"  width="400"  alt="Laravel Logo"></a></p>
 
-# Time Master Game
+# PlantEd - Agricultural Education Serious Game
 
 
-## Description
+## Overview
 
-The "Time Master" game is designed to help players improve their time management skills. In this game, players are faced with task management challenges and must make quick decisions to complete a set of tasks within a given time frame. The ultimate goal is to achieve success at each level by effectively managing the allocated time.
-
+PlantEd is a web-based serious game developed to enhance agricultural education, specifically targeting students majoring in farming plants. Leveraging Laravel for backend development, Vue.js for frontend interactivity, and Vuetify for seamless UI components, PlantEd offers an engaging and educational experience through a quiz-based format.
 ## Features
 
-1. Tasks and Levels
-   - Defined Tasks: The game offers a variety of clearly defined tasks, each with an estimated duration for completion.
-   - Difficulty Levels: The game is divided into levels, with each level presenting a specific set of tasks to be completed within a given time frame.
-
-2. Time Management
-   - Quick Decision Making: Players must make quick decisions about task priorities and time allocation.
-   - Interaction Mechanisms: Use of buttons or drag-and-drop features to facilitate task management.
-
-3. Rewards and Penalties
-   - Rewards: Players are rewarded with points or additional levels for effective time management.
-   - Penalties: Penalties are applied if the player fails to complete tasks within the given time frame.
-
+     1- Quiz Modules: Structured quizzes covering plant species, growth requirements, and cultivation practices.
+     2- Adaptive Learning Paths: Tailoring difficulty levels based on individual performance for an optimized learning experience.
+     3- Immediate Feedback: Providing instant feedback on quiz responses to reinforce correct answers and guide further learning.
+     4- Progress Tracker: Visualizing user advancement, fostering a sense of accomplishment and motivation.
+     5-Peer Comparison: Enabling users to compare quiz scores, fostering a sense of collaboration and healthy competition.
+<p  align="center"><a  href="#"  target="_blank"><img  src="/readmeimg.jpg"  width="400"  alt="Laravel Logo"></a></p>
 ## Technologies Used
 
 1. Back-end with Laravel
@@ -40,7 +33,7 @@ To install and run the "Time Master" game locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/time-master.git
+   git clone https://github.com/Kaiji21/Game-PlantEd.git
  ### Laravel Configuration
 
 To install Laravel, please follow these steps:
@@ -78,8 +71,16 @@ To install Laravel, please follow these steps:
 	 `npm install` 
 5.  Start the development server by running the following command:
      ```bash
-	 `npm run dev`	
+	 `npm run dev`
+
+### Postman documentation 
+we have provided a Postman collection that documents all the available endpoints and their usage. This collection includes detailed descriptions, request parameters, and example responses for each endpoint, making it easy for developers to understand and test the API.
+The Postman URL :   `https://documenter.getpostman.com/view/20708624/2s9YeK5AwJ#0b12d01d-720e-41f5-bd47-979f02c3256c` .
+
+
+
 You should now be able to access your Vue.js application at  `http://localhost:5173`.
+
 
 	
  
