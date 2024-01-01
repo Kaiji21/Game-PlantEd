@@ -1,31 +1,31 @@
 const features = [
     {
         id: 1,
-        name: "Time Mastery",
+        name: "Quiz Modules",
         details: {
             imageUrl: "imgs/feature_nb1.svg",
-            title: "Mastering Time Challenges",
-            description: "Embark on a journey of time management mastery. Complete tasks, earn rewards, and rise to the challenge. Are you ready to unlock your true potential?",
+            title: "Quiz Modules",
+            description: "Structured quizzes covering plant species, growth requirements, and cultivation practices.",
             link: "#",
         },
     },
     {
         id: 2,
-        name: "Task Completion",
+        name: "Adaptive Learning Paths",
         details: {
             imageUrl: "imgs/feature_nb2.svg",
             title: "Complete Challenging Tasks",
-            description: "Take on diverse and challenging tasks designed to test your time management skills. Each completed task brings you one step closer to becoming a Time Master.",
+            description: "Tailoring difficulty levels based on individual performance for an optimized learning experience.",
             link: "#",
         },
     },
     {
         id: 3,
-        name: "Earn Rewards",
+        name: "Peer Comparison",
         details: {
             imageUrl: "imgs/feature_nb3.jpg",
-            title: "Earn Exciting Rewards",
-            description: "Successfully complete tasks within the given time to earn rewards. Unlock badges, collect points, and showcase your achievements as you progress through the levels.",
+            title: "Peer Comparison",
+            description: "Enabling users to compare quiz scores, fostering a sense of collaboration and healthy competition.",
             link: "#",
         },
     },

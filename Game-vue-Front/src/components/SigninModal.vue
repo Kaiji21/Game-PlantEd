@@ -17,14 +17,14 @@
                         <!-- Left column container with background-->
                         <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-evenly">
                             <div class="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
-                                <img v-if="isLoginMode" src="../assets/imgs/Login-cuate.png" class="w-96"
+                                <img v-if="isLoginMode" src="../assets/imgs/Login-cuate.svg" class="w-96"
                                     alt="Sample image" />
                                 <img v-else src="../assets/imgs/Sign up-bro.svg" class="w-96" alt="Sample image" />
                             </div>
 
                             <!-- Right column container -->
                             <div class="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12">
-                                <h1 class="mb-1 text-3xl font-bold text-center text-[#97562D]">
+                                <h1 class="mb-1 text-3xl font-bold text-center text-[#A1F58D]">
                                     {{ isLoginMode ? 'Welcome Back!' : 'Unlock the Full Gaming Experience' }}
 
                                 </h1>
@@ -51,7 +51,7 @@
 
 
                                     <button v-if="!visible" type="submit"
-                                        class="w-full text-center py-3 rounded-lg bg-[#97562D] text-white text-xl font-bold  focus:outline-none my-1">S'inscrire</button>
+                                        class="w-full text-center py-3 rounded-lg bg-[#A1F58D] text-white text-xl font-bold  focus:outline-none my-1">S'inscrire</button>
                                 </form>
                                 <form v-else @submit.prevent="loginUser">
                                     <input type="text" v-model="email"
@@ -68,7 +68,7 @@
 
 
                                     <button v-if="!visible" type="submit"
-                                        class="w-full text-center py-3 rounded-lg bg-[#97562D] text-white text-xl font-bold  focus:outline-none my-1">S'inscrire</button>
+                                        class="w-full text-center py-3 rounded-lg bg-[#A1F58D] text-white text-xl font-bold  focus:outline-none my-1">S'inscrire</button>
                                 </form>
 
 
@@ -76,7 +76,7 @@
                                 <p class="text-center text-[#9D9D9D] text-sm font-normal">
                                     {{ isLoginMode ? "Nouveau sur le site?" : "Vous avez déjà un compte?" }}
                                     <button @click="toggleMode"
-                                        class="text-[#97562D] underline underline-offset-2">
+                                        class="text-[#A1F58D] underline underline-offset-2">
                                         {{ isLoginMode ? 'Inscrivez-vous ici' : 'Connectez-vous ici' }}
                                     </button>
                                 </p>

@@ -14,9 +14,11 @@ let isOpen = ref(1);
             <div class="w-4/5 md:w-3/5 mx-auto">
                 <h2 class="text-3xl md:text-4xl font-semibold font-theme-heading text-center">Features</h2>
                 <p class="text-theme-grayish-blue text-center mt-7 font-theme-content text-lg">
-                    Embark on a journey of time management mastery with "Time Master." Our aim is to challenge and enhance
-                    your time management skills. Complete diverse and challenging tasks, earn exciting rewards, and rise to
-                    the challenge. Are you ready to unlock your true potential and become a Time Master?
+                    Explore a world of agricultural knowledge with PlantEd's unique features designed to elevate your
+                    learning experience. Engage in structured quizzes covering plant species, growth requirements, and
+                    cultivation practices through our Quiz Modules. Navigate personalized learning paths with Adaptive
+                    Learning, tailoring difficulty levels based on your performance. Foster collaboration and friendly
+                    competition with Peer Comparison.
                 </p>
             </div>
 
@@ -53,5 +55,4 @@ let isOpen = ref(1);
             </div>
         </section>
     </div>
-    <!-- Features Section End -->
-</template>
+<!-- Features Section End --></template>

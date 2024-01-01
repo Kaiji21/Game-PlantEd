@@ -4,6 +4,7 @@ import Homeview from '../views/Home.vue'
 import Gameview from '../views/Gameview.vue'
 import Profile from '../views/Profile.vue'
 import GameStart from '../views/GameStart.vue'
+import Levels from '../views/Levels.vue'
 
 
 const routes = [
@@ -17,7 +18,7 @@ const routes = [
         name: 'teste',
         meta: { hideHeaderFooter: true },
         component: GameStart
-      },
+    },
     {
         path: '/Game',
         name: 'Game',
@@ -33,6 +34,12 @@ const routes = [
                 path: 'start',
                 name: 'gamestart',
                 component: GameStart
+            },
+            {
+                path: '/level/:id',
+                name: 'level',
+                meta: { hideHeaderFooter: true },
+                component: Levels
             },
         ]
 

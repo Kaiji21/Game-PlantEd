@@ -1,23 +1,23 @@
 const faqs = [
     {
         id: 1,
-        title: "What is Time Master?",
-        description: "Time Master is an exciting game that combines elements of strategy, adventure, and time manipulation. Players take on the role of time travelers, navigating through different eras and solving puzzles to unravel the mysteries of time. The game offers a unique storyline, challenging quests, and the ability to control time to overcome obstacles and challenges.",
+        title: "What is PlantEd?",
+        description: "PlantEd is an innovative web-based serious game dedicated to enhancing agricultural education. Players immerse themselves in a quiz-based format, where they navigate through various plant-related challenges to grow their knowledge and understanding of plant species, cultivation practices, and growth requirements.",
     },
     {
         id: 2,
-        title: "How can I level up in Time Master?",
-        description: "To level up in Time Master, you need to complete quests, challenges, and defeat enemies. Earn experience points (XP) by successfully navigating through different time periods and accomplishing in-game objectives. As you accumulate XP, you'll progress to higher levels, unlocking new abilities, time-manipulating powers, and gaining access to advanced game features.",
+        title: "How can I progress in PlantEd?",
+        description: "To advance in PlantEd, successfully complete quiz modules, unlock achievements, and master adaptive learning paths. Earn points and badges as you cultivate your agricultural wisdom. The more you explore and engage with the quiz-based challenges, the more your knowledge blossoms.",
     },
     {
         id: 3,
-        title: "Are there in-game purchases available?",
-        description: "Yes, Time Master offers in-game purchases that allow you to enhance your gaming experience. You can purchase special time-traveling artifacts, power-ups, and cosmetic items to customize your character. While in-game purchases are optional, they can provide additional advantages and personalization options to make your journey through time even more thrilling.",
+        title: "Are there in-game enhancements available?",
+        description: "Yes, PlantEd offers optional in-game enhancements to enrich your learning experience. You can acquire special boosts, detailed plant information, and personalized avatars to enhance your gameplay. While these enhancements are optional, they add a layer of fun and depth to your educational journey.",
     },
     {
         id: 4,
-        title: "Can I play Time Master on different devices?",
-        description: "Absolutely! Time Master is designed to be cross-platform, allowing you to play the game on various devices. Whether you're on your computer, smartphone, or tablet, you can seamlessly continue your time-traveling adventure. Make sure to sync your progress by logging in with your account, ensuring a consistent gaming experience across all your devices.",
+        title: "Can I access PlantEd on different devices?",
+        description: "Certainly! PlantEd is designed to be accessible across various devices. Whether you're on your computer, smartphone, or tablet, you can seamlessly continue your agricultural learning adventure. Ensure a consistent experience by logging in with your account to sync your progress across all your devices.",
     },
 ];
 

@@ -11,20 +11,24 @@
 
 
             <div class="w-full lg:w-3/5 mx-auto">
-                <div class="card">
+                <div class="card overflow-hidden rounded-lg shadow-md mt-5">
                     <Carousel :value="users" :numVisible="1" :numScroll="1" :responsiveOptions="responsiveOptions">
                         <template #item="slotProps">
                             <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
                                 <div class="mb-3">
-                                    <Avatar icon="pi pi-user" class="mr-2" size="xlarge" shape="circle" />
+                                    <Avatar image="/imgs/Avatar.jpg" class="mr-2" size="xlarge" shape="circle" />
 
                                 </div>
                                 <div>
                                     <h4 class="mb-1">{{ slotProps.data.name }}</h4>
                                     <h6 class="mt-0 mb-3">Level : {{ slotProps.data.level_id }}</h6>
-                                    <Tag :value="slotProps.data.total_points" severity="Success"  />
+                                    <Tag :value="slotProps.data.total_points +'  points'" severity="Success"  />
 
                                     <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                                        <Chip label="Badges :" />
+                                        <Chip label="Floral Explorer" image="/imgs/1.png" class=" bg-[#A1F58D]" />
+                                        <Chip label="Seed expert" image="/imgs/3.png" class=" bg-[#A1F58D]" />
+
 
                                     </div>
                                 </div>
@@ -41,8 +45,8 @@
 <script setup>
 
 import Tag from 'primevue/tag';
-import { FwbRating } from 'flowbite-vue'
-import { FwbBadge } from 'flowbite-vue'
+import Chip from 'primevue/chip';
+
 
 import Avatar from 'primevue/avatar';
 import { ref, onMounted } from "vue";
