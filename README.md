@@ -33,7 +33,7 @@ To install and run the "Time Master" game locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/time-master.git
+   git clone https://github.com/Kaiji21/Game-PlantEd.git
  ### Laravel Configuration
 
 To install Laravel, please follow these steps:
@@ -75,7 +75,7 @@ To install Laravel, please follow these steps:
 
 ### Postman documentation 
 we have provided a Postman collection that documents all the available endpoints and their usage. This collection includes detailed descriptions, request parameters, and example responses for each endpoint, making it easy for developers to understand and test the API.
-The Postman URL :`https://documenter.getpostman.com/view/20708624/2s9YeK5AwJ#0b12d01d-720e-41f5-bd47-979f02c3256c` .
+The Postman URL :   `https://documenter.getpostman.com/view/20708624/2s9YeK5AwJ#0b12d01d-720e-41f5-bd47-979f02c3256c` .
 
 
 
