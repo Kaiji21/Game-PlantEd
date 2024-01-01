@@ -1,25 +1,18 @@
 <p  align="center"><a  href="#"  target="_blank"><img  src="/readmeimg.jpg"  width="400"  alt="Laravel Logo"></a></p>
 
-# Time Master Game
+# PlantEd - Agricultural Education Serious Game
 
 
-## Description
+## Overview
 
-The "Time Master" game is designed to help players improve their time management skills. In this game, players are faced with task management challenges and must make quick decisions to complete a set of tasks within a given time frame. The ultimate goal is to achieve success at each level by effectively managing the allocated time.
-
+PlantEd is a web-based serious game developed to enhance agricultural education, specifically targeting students majoring in farming plants. Leveraging Laravel for backend development, Vue.js for frontend interactivity, and Vuetify for seamless UI components, PlantEd offers an engaging and educational experience through a quiz-based format.
 ## Features
 
-1. Tasks and Levels
-   - Defined Tasks: The game offers a variety of clearly defined tasks, each with an estimated duration for completion.
-   - Difficulty Levels: The game is divided into levels, with each level presenting a specific set of tasks to be completed within a given time frame.
-
-2. Time Management
-   - Quick Decision Making: Players must make quick decisions about task priorities and time allocation.
-   - Interaction Mechanisms: Use of buttons or drag-and-drop features to facilitate task management.
-
-3. Rewards and Penalties
-   - Rewards: Players are rewarded with points or additional levels for effective time management.
-   - Penalties: Penalties are applied if the player fails to complete tasks within the given time frame.
+     1- Quiz Modules: Structured quizzes covering plant species, growth requirements, and cultivation practices.
+     2- Adaptive Learning Paths: Tailoring difficulty levels based on individual performance for an optimized learning experience.
+     3- Immediate Feedback: Providing instant feedback on quiz responses to reinforce correct answers and guide further learning.
+     4- Progress Tracker: Visualizing user advancement, fostering a sense of accomplishment and motivation.
+     5-Peer Comparison: Enabling users to compare quiz scores, fostering a sense of collaboration and healthy competition.
 
 ## Technologies Used
 
