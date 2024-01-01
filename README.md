@@ -71,8 +71,13 @@ To install Laravel, please follow these steps:
 	 `npm install` 
 5.  Start the development server by running the following command:
      ```bash
-	 `npm run dev`	
+	 `npm run dev`
+
+### Postman documentation 
+we have provided a Postman collection that documents all the available endpoints and their usage. This collection includes detailed descriptions, request parameters, and example responses for each endpoint, making it easy for developers to understand and test the API.
+The Postman URL :`https://documenter.getpostman.com/view/20708624/2s9YeK5AwJ#0b12d01d-720e-41f5-bd47-979f02c3256c`
 You should now be able to access your Vue.js application at  `http://localhost:5173`.
+
 
 	
  
