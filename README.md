@@ -1,4 +1,4 @@
-<p  align="center"><a  href="#"  target="_blank"><img  src="/readmeimg.jpg"  width="400"  alt="Laravel Logo"></a></p>
+<p  align="center"><a  href="#"  target="_blank"><img  src="/6.png"  width="400"  alt="Laravel Logo"></a></p>
 
 # PlantEd - Agricultural Education Serious Game
 
@@ -13,7 +13,7 @@ PlantEd is a web-based serious game developed to enhance agricultural education,
      3- Immediate Feedback: Providing instant feedback on quiz responses to reinforce correct answers and guide further learning.
      4- Progress Tracker: Visualizing user advancement, fostering a sense of accomplishment and motivation.
      5-Peer Comparison: Enabling users to compare quiz scores, fostering a sense of collaboration and healthy competition.
-
+<p  align="center"><a  href="#"  target="_blank"><img  src="/readmeimg.jpg"  width="400"  alt="Laravel Logo"></a></p>
 ## Technologies Used
 
 1. Back-end with Laravel
